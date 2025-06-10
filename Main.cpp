@@ -578,12 +578,6 @@ public:
 					}
 				}
 
-				// auto projectile_to_remove = std::remove_if(projectiles.begin(), projectiles.end(),
-				// 	[](auto& projectile) {
-				// 		return projectile.Update(dt);
-				// 	});
-				// projectiles.erase(projectile_to_remove, projectiles.end());
-
 				auto grenade_to_remove = std::remove_if(projectiles.begin(), projectiles.end(),
 					[](auto& projectile) {
 						return projectile.ShouldRemove();
